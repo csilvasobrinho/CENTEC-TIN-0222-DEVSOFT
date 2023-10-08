@@ -40,5 +40,7 @@ public class AlterarNomePessoa {
 		}else {
 			System.out.println("Pessoa não localizada no Banco de Dados.");
 		}
+		conexao.close();
+		entrada.close();
 	}
 }
