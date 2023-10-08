@@ -5,24 +5,23 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class NovaPessoa {
+public class ExcluiPessoa {
 	public static void main(String[] args) throws SQLException {
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Nome: ");
-		String nome = entrada.nextLine();
+		System.out.println("Excluir que código: ");
+		int codigo = entrada.nextInt();
 		
 		Connection conexao = FabricaDeConexao.getConexao();
-		
-		String sql = "INSERT INTO pessoas (nome) VALUES (?)";
+		String sql = "DELETE FROM pessoas WHERE codigo = ?";
 		
 		PreparedStatement stmt = conexao.prepareStatement(sql);
-		stmt.setString(1, nome);
+		stmt.setInt(1, codigo);
 		
-		stmt.execute();
-		
-		System.out.println("\nINSERT efetivado!");
-		
-		entrada.close();
+		if(stmt.executeUpdate() > 0) {
+			System.out.println("Exclusão efetivada!");
+		}else {
+			System.out.println("Exclusão NÃO efetivada!");
+		}
 	}
 }
