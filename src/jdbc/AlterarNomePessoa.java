@@ -26,7 +26,7 @@ public class AlterarNomePessoa {
 			
 			System.out.println("O nome atual é: " + p.getNome());
 			entrada.nextLine();
-			System.out.println("Informe o novo nome: ");
+			System.out.println("\nInforme o novo nome: ");
 			String novoNome = entrada.nextLine();
 			
 			stmt.close();
@@ -36,7 +36,7 @@ public class AlterarNomePessoa {
 			stmt.setInt(2, codigo);
 			stmt.execute();
 			
-			System.out.println("Altaração efetivada!");
+			System.out.println("\nAltaração efetivada!");
 		}else {
 			System.out.println("Pessoa não localizada no Banco de Dados.");
 		}
