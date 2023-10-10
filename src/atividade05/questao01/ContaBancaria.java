@@ -42,6 +42,7 @@ public class ContaBancaria {
 	public double deposito(double valor) {
 		saldoAtual = this.saldo;
 		this.saldo = saldoAtual + valor;
+		System.out.println("\n -: **DEPÓSITO EFETIVADO!** :-");
 		return getSaldo();
 	}
 }
