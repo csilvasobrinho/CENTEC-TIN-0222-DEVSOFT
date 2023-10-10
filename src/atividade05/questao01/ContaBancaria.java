@@ -23,8 +23,8 @@ public class ContaBancaria {
 	}
 
 	public void extrato() {
-		System.out.println(conta);
-		System.out.println(saldo);
+		System.out.println("CONTA: " + this.conta);
+		System.out.println("SALDO ATUAL: " + this.saldo);
 	}
 	
 	public double saque(double valor) {

@@ -29,7 +29,7 @@ public class TestarConta {
 			System.out.println("\n ==> SALDO PÓS DEPÓSITO: " + c1.getSaldo());
 			break;
 		case 3: 
-			System.out.println("Operação EXTRATO em desenvovimento...");
+			c1.extrato();;
 			break;
 		default:
 			System.out.println("Opção não definida!");
