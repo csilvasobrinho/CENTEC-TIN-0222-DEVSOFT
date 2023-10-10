@@ -31,7 +31,7 @@ public class ContaBancaria {
 		saldoAtual = this.saldo;
 		
 		if(valor > saldoAtual) {
-			System.out.println("\\n -: **SALDO INSUFICIENTE!** :-");
+			System.out.println("\\n -:| SALDO INSUFICIENTE! |:-");
 		}else {
 			this.saldo = saldoAtual - valor;
 			System.out.println("\n -: **SAQUE EFETIVADO!** :-");
