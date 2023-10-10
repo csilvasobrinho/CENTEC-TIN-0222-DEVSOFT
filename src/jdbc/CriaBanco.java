@@ -15,11 +15,10 @@ public class CriaBanco {
 
         Statement stmt = conexao.createStatement();
 
-        stmt.execute("CREATE DATABASE IF NOT EXISTS tin0222");
+        stmt.execute("CREATE DATABASE IF NOT EXISTS cadastroDeVeiculos");
 
         System.out.println("Banco criado com sucesso!");
 
         conexao.close();
 	}
-
 }

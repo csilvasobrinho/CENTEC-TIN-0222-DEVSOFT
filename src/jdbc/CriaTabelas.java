@@ -4,11 +4,11 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CriaTabelaPessoa {
+public class CriaTabelas {
 	public static void main(String[] args) throws SQLException {
 		Connection conexao = FabricaDeConexao.getConexao();
 
-        String sql = "CREATE TABLE IF NOT EXISTS pessoas ("
+        String sql = "CREATE TABLE IF NOT EXISTS veiculos ("
                 + "codigo INT AUTO_INCREMENT PRIMARy KEY,"
                 + "nome VARCHAR(80) NOT NULL" + ")";
 
@@ -18,5 +18,4 @@ public class CriaTabelaPessoa {
         System.out.println("Tabela criada com sucesso!");
         conexao.close();
 	}
-
 }

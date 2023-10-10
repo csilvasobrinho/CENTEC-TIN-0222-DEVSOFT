@@ -5,12 +5,6 @@ public class ContaBancaria {
 	private String conta = "102030-40";
 	private double saldo = 1000;
 	
-	public ContaBancaria(String conta, double saldo) {
-		super();
-		this.conta = conta;
-		this.saldo = saldo;
-	}
-
 	public String getConta() {
 		return conta;
 	}
@@ -41,8 +35,15 @@ public class ContaBancaria {
 	}
 	
 	public double saque(double valor) {
-		double novoSaldo = saldo - valor;
-		return novoSaldo;
+		double saldoAtual = this.saldo;
+		
+		if(valor > saldoAtual) {
+			System.out.println("\\n -: **SALDO INSUFICIENTE!** :-");
+		}else {
+			this.saldo = saldoAtual - valor;
+			System.out.println("\n -: **SAQUE EFETIVADO!** :-");
+		}
+		return getSaldo();
 	}
 	
 	public double deposito(double valor) {
