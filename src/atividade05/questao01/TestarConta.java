@@ -29,7 +29,7 @@ public class TestarConta {
 			System.out.println("\nGrato pelo saque...!");
 			break;
 		case 2: 
-			while(saida ==1) {
+			while(saida == 1) {
 				System.out.printf("\n ==> VALOR DO DEPÓSITO: ");
 				valor = lerValor.nextDouble();
 				c1.deposito(valor);
