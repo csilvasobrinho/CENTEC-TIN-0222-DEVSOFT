@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class TestarConta {
 	public static void main(String[] args) {
 		
+		double valor = 0;
 		Scanner lerOpcao = new Scanner(System.in);
 		Scanner lerValor = new Scanner(System.in);
 		ContaBancaria c1 = new ContaBancaria();
@@ -16,13 +17,15 @@ public class TestarConta {
 		switch (opcao) {
 		case 1: 
 			System.out.printf("\n ==> VALOR DO SAQUE: ");
-			double valor = lerValor.nextDouble();
+			valor = lerValor.nextDouble();
 			c1.saque(valor);
 			System.out.println("\n ==> SALDO PÓS SAQUE: " + c1.getSaldo());
-						
 			break;
 		case 2: 
-			System.out.println("Operação DEPÓSITO em desenvovimento...");
+			System.out.printf("\n ==> VALOR DO DEPÓSITO: ");
+			valor = lerValor.nextDouble();
+			c1.deposito(valor);
+			System.out.println("\n ==> SALDO PÓS DEPÓSITO: " + c1.getSaldo());
 			break;
 		case 3: 
 			System.out.println("Operação EXTRATO em desenvovimento...");
