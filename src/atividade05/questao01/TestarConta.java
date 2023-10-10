@@ -13,7 +13,7 @@ public class TestarConta {
 		
 		System.out.println("\n ==> CONTA: " + c1.getConta() + ";");
 		System.out.println(" ==> SALDO ATUAL: " + c1.getSaldo() + ";");
-		System.out.println("\n -: **OPERAÇÃO** :-\n[1] SAQUE;\n[2] DEPÓSITO;\n[3] EXTRATO.");
+		System.out.println("\n -:| OPERAÇÃO |:-\n[1] SAQUE;\n[2] DEPÓSITO;\n[3] EXTRATO.");
 		int opcao = lerOpcao.nextInt();
 		
 		switch (opcao) {
