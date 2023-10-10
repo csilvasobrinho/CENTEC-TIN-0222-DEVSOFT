@@ -45,5 +45,6 @@ public class TestarConta {
 		}
 		
 		lerValor.close();
+		lerOpcao.close();
 	}
 }
