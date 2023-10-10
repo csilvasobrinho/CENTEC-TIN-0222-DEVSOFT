@@ -38,7 +38,7 @@ public class TestarConta {
 			System.out.println("\nGrato pelo depósito...!");
 			break;
 		case 3: 
-			c1.extrato();;
+			c1.extrato();
 			break;
 		default:
 			System.out.println("Opção não definida!");
