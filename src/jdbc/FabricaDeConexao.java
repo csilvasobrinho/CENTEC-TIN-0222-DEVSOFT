@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class FabricaDeConexao {
 	public static Connection getConexao() {
 		try {
-			final String url = "jdbc:mysql://localhost/cadastroDeVeiculos";
+			final String url = "jdbc:mysql://localhost/pessoas";
 			final String usuario = "root";
 			final String senha = "12345678";
 

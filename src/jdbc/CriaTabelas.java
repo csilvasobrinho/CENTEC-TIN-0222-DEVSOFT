@@ -8,7 +8,7 @@ public class CriaTabelas {
 	public static void main(String[] args) throws SQLException {
 		Connection conexao = FabricaDeConexao.getConexao();
 
-        String sql = "CREATE TABLE IF NOT EXISTS veiculos ("
+        String sql = "CREATE TABLE IF NOT EXISTS pessoas ("
                 + "codigo INT AUTO_INCREMENT PRIMARy KEY,"
                 + "nome VARCHAR(80) NOT NULL" + ")";
 

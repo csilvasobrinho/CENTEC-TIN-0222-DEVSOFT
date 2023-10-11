@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class AlterarNomePessoa {
+public class AlterarDados {
 	public static void main(String[] args) throws SQLException{
 		Scanner entrada = new Scanner(System.in);
 		
